@@ -1,0 +1,74 @@
+{
+  "rides": [
+    {
+      "name": "Bucking Bronco",
+      "description": "Hold on tight as you ride the wild bucking bronco through the dusty plains!",
+      "location": "Frontierland",
+      "wait_time": "unknown",
+      "image": "assets/images/bull.png"
+    },
+    {
+      "name": "Stampede Express",
+      "description": "Join the stampede aboard the fastest train in the West!",
+      "location": "Frontierland",
+      "wait_time": "unknown",
+      "image": "assets/images/stampede.png"
+    },
+    {
+      "name": "Tumbleweed Twister",
+      "description": "Spin and swirl through the desert winds on this wild tumbleweed adventure!",
+      "location": "Frontierland",
+      "wait_time": "unknown",
+      "image": "assets/images/tumbleweed.png"
+    },
+    {
+      "name": "Cactus Coaster",
+      "description": "Zoom through the desert landscape on this thrilling cactus-themed roller coaster!",
+      "location": "Frontierland",
+      "wait_time": "unknown",
+      "image": "assets/images/cactus.png"
+    },
+    {
+      "name": "Gold Rush Rapids",
+      "description": "Hang on as you navigate the treacherous rapids of the gold rush river!",
+      "location": "Frontierland",
+      "wait_time": "unknown",
+      "image": "assets/images/gold.png"
+    },
+    {
+      "name": "Wild West Whirl",
+      "description": "Twist and turn through the old western town on this exciting spinning ride!",
+      "location": "Old Town",
+      "wait_time": "unknown",
+      "image": "assets/images/wild-west.png"
+    },
+    {
+      "name": "Prairie Plunge",
+      "description": "Take the plunge down the tallest drop in the prairie on this thrilling water ride!",
+      "location": "Old Town",
+      "wait_time": "unknown",
+      "image": "assets/images/prairie.png"
+    },
+    {
+      "name": "Saloon Swing",
+      "description": "Swing high and low on this classic saloon-themed swing ride!",
+      "location": "Old Town",
+      "wait_time": "unknown",
+      "image": "assets/images/saloon.png"
+    },
+    {
+      "name": "Desert Dune Buggies",
+      "description": "Race through the sandy dunes in your very own desert dune buggy!",
+      "location": "Desert Zone",
+      "wait_time": "unknown",
+      "image": "assets/images/dune-buggy.png"
+    },
+    {
+      "name": "Rattlesnake Run",
+      "description": "Slither and slide through the twists and turns of the rattlesnake-infested canyon!",
+      "location": "Desert Zone",
+      "wait_time": "unknown",
+      "image": "assets/images/rattlesnake.png"
+    }
+  ]
+}
