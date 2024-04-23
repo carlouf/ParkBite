@@ -13,6 +13,11 @@ class MainApp extends StatelessWidget {
       title: "Robert Rodeo",
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.red,
+          background:Color(0xFF3D3028),
+          brightness: Brightness.dark
+        ),
       ),
       home: const AppBody(),
 
@@ -22,8 +27,7 @@ class MainApp extends StatelessWidget {
 
 
 
-
-
+ 
 
 
 

@@ -13,16 +13,17 @@ class AppBody extends StatefulWidget {
 
 class _AppBodyState extends State<AppBody> {
 
-  int _selectedIndex = 3;
+  int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Robert Rodeo"),
-        backgroundColor: Colors.red[300],
+        backgroundColor: Color.fromRGBO(217, 187, 99, 1),
       ),
       body: IndexedStack(
+        
         index: _selectedIndex,
         children: <Widget>[ 
           Home(),
@@ -32,6 +33,7 @@ class _AppBodyState extends State<AppBody> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color.fromRGBO(217, 187, 99, 1),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -51,8 +53,8 @@ class _AppBodyState extends State<AppBody> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
-        unselectedItemColor: Colors.grey[600],
+        selectedItemColor: Color.fromRGBO(217, 187, 99, 1),
+        unselectedItemColor: Colors.grey[100],
         onTap: (index) {
           setState(() {
             _selectedIndex = index;
