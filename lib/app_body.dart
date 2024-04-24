@@ -19,8 +19,12 @@ class _AppBodyState extends State<AppBody> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Robert Rodeo"),
-        backgroundColor: Color.fromRGBO(217, 187, 99, 1),
+        title: Text(
+          "Robert Rodeo",
+          style: TextStyle(color: Theme.of(context).colorScheme.onPrimaryContainer),
+          ),
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+        
       ),
       body: IndexedStack(
         
@@ -53,8 +57,8 @@ class _AppBodyState extends State<AppBody> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Color.fromRGBO(217, 187, 99, 1),
-        unselectedItemColor: Colors.grey[100],
+        selectedItemColor: Theme.of(context).colorScheme.onPrimaryContainer,
+        unselectedItemColor: Theme.of(context).colorScheme.secondary,
         onTap: (index) {
           setState(() {
             _selectedIndex = index;

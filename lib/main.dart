@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:roberts_rodeo/theme/dark_theme.dart';
+import 'package:roberts_rodeo/theme/light_theme.dart';
 import 'app_body.dart';
 void main() {
   runApp(const MainApp());
@@ -11,14 +13,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Robert Rodeo",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.red,
-          background:Color(0xFF3D3028),
-          brightness: Brightness.dark
-        ),
-      ),
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      
       home: const AppBody(),
 
     );

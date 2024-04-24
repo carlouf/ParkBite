@@ -27,7 +27,7 @@ class _FunState extends State<Fun> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF3D3028),
+      
       appBar: AppBar(
         title: Text('Random Quote'),
       ),
@@ -59,3 +59,6 @@ void main() {
     home: Fun(),
   ));
 }
+
+
+// TODO: add wifi detection

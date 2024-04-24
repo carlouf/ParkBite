@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF3D3028),
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: SingleChildScrollView(
       
       child:  Column(
@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30.0,
-                color: Colors.white,
+                
               ),
 
             ),
@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 20.0,
-                color: Colors.white,
+                
               ),
             ),
 
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30.0,
-                color: Colors.white,
+                
               ),
             ),
 
@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15.0,
-                color: Colors.white,
+                
               ),
             ),
 
@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 20.0,
-                color: Colors.white,
+                
               ),
             ),
             
