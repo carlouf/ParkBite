@@ -23,6 +23,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
       body: SingleChildScrollView(
@@ -38,7 +39,9 @@ class _HomeState extends State<Home> {
                 width: 300.0,
                 height: 250.0,
                 child: Image(
-                  image: AssetImage('assets/images/logo.png'),
+                  image: AssetImage(
+                    isDarkMode ? 'assets/images/logo.png' : 'assets/images/logo_light.webp',
+                  ),
                   fit: BoxFit.cover,
                 ),
               ),
