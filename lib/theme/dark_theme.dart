@@ -37,4 +37,15 @@ ThemeData darkTheme = ThemeData(
     scrim: Color(0xFF000000),
   ),
   
+  textTheme: TextTheme(
+    bodyMedium: TextStyle(
+      fontSize: 18.0,
+      fontWeight: FontWeight.bold,
+      color: Color(0xFFE8E2D9),
+    ),
+    bodySmall: TextStyle(
+      color: Color(0xFFE8E2D9),
+    )
+  )
+
 );

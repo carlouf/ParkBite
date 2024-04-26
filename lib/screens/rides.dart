@@ -170,12 +170,12 @@ class _OnlineState extends State<Online> {
                         style: TextStyle(
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,
-                        color: Theme.of(context).colorScheme.onPrimaryContainer,
+                        
                         ),
                       ),
 
-                        Text(rides[index].location, style: TextStyle(color: Theme.of(context).colorScheme.onPrimaryContainer,)),
-                        Text(rides[index].waitTime, style: TextStyle(color: Theme.of(context).colorScheme.onPrimaryContainer,)),
+                        Text(rides[index].location,),
+                        Text(rides[index].waitTime,),
                       ],
                     )
                   ],

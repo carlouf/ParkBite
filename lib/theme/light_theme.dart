@@ -35,5 +35,16 @@ ThemeData lightTheme = ThemeData(
     surfaceTint: Color(0xFF735C00),
     outlineVariant: Color(0xFFCFC6B4),
     scrim: Color(0xFF000000),
+  ),
+  textTheme: TextTheme(
+    bodyMedium: TextStyle(
+      fontSize: 18.0,
+      fontWeight: FontWeight.bold,
+      color: Color(0xFF1E1B16),
+    ),
+    bodySmall: TextStyle(
+      color: Color(0xFF1E1B16),
+    )
   )
+
 );
