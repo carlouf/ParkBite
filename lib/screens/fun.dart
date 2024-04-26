@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:internet_connection_checker/internet_connection_checker.dart';
 
 class Fun extends StatefulWidget {
   @override
@@ -8,6 +11,53 @@ class Fun extends StatefulWidget {
 }
 
 class _FunState extends State<Fun> {
+
+  late StreamSubscription subscription;
+  bool isOnline = false;
+
+
+  @override
+  void initState() {
+    getConnectivity();
+    super.initState();
+    
+  }
+
+  getConnectivity(){
+    subscription = Connectivity().onConnectivityChanged.listen(
+      (List<ConnectivityResult> results) async {
+        isOnline = await InternetConnectionChecker().hasConnection;
+      }
+    //https://www.youtube.com/watch?v=PQ2H3DhBb0s
+    
+    );
+  }
+  @override
+  Widget build(BuildContext context) {
+    return isOnline ? const Online() : const Offline();
+  }
+
+
+}
+
+class Online extends StatefulWidget {
+  const Online({super.key});
+
+  @override
+  State<Online> createState() => _OnlineState();
+}
+
+class _OnlineState extends State<Online> {
+  late StreamSubscription subscription;
+  bool isOnline = false;
+  bool _isSnackbarActive = false ;
+
+Future<bool> getConnectivity() async {
+  bool isOnline = await InternetConnectionChecker().hasConnection;
+  return isOnline;
+}
+
+
   String quote = '';
 
   Future<void> fetchQuote() async {
@@ -42,8 +92,25 @@ class _FunState extends State<Fun> {
             ),
             SizedBox(height: 20.0),
             ElevatedButton(
-              onPressed: () {
-                fetchQuote();
+              onPressed: () async {
+
+                isOnline = await getConnectivity();
+
+                if (isOnline) {
+                  fetchQuote();
+                }else if (!_isSnackbarActive) {
+                  _isSnackbarActive = true;
+                  ScaffoldMessenger.of(context)
+                  .showSnackBar(
+                    const SnackBar(
+                      content: Text('No Internet Connection'),
+                    ),
+                  )
+                  .closed
+                  .then((reason) {
+                    _isSnackbarActive = false;
+                  });
+                }
               },
               child: Text('New Quote'),
             ),
@@ -54,11 +121,16 @@ class _FunState extends State<Fun> {
   }
 }
 
-void main() {
-  runApp(MaterialApp(
-    home: Fun(),
-  ));
+class Offline extends StatefulWidget {
+  const Offline({super.key});
+
+  @override
+  State<Offline> createState() => _OfflineState();
 }
 
-
-// TODO: add wifi detection
+class _OfflineState extends State<Offline> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
