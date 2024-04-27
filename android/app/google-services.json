@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499517203874",
+    "project_id": "roberts-rodeo",
+    "storage_bucket": "roberts-rodeo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499517203874:android:6cdb9a2b329ccee6227efb",
+        "android_client_info": {
+          "package_name": "com.example.roberts_rodeo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKZuQCzMkDpCEYoQ78eqWAmEIlwv1o9PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
