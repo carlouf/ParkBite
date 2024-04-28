@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/home.dart';
 import 'screens/rides.dart';
 import 'screens/fun.dart';
-import 'screens/screen4.dart';
+import 'screens/user_info.dart';
 
 class AppBody extends StatefulWidget {
   const AppBody({super.key});
@@ -33,7 +33,7 @@ class _AppBodyState extends State<AppBody> {
           Home(),
           Rides(),
           Fun(),
-          Screen4(),
+          UserInfo(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -52,8 +52,8 @@ class _AppBodyState extends State<AppBody> {
             label: "Fun",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.holiday_village),
-            label: "Screen 4",
+            icon: Icon(Icons.person),
+            label: "Profile",
           ),
         ],
         currentIndex: _selectedIndex,
