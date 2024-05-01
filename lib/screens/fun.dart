@@ -1,9 +1,11 @@
+import 'package:battery_plus/battery_plus.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:sensors_plus/sensors_plus.dart';
 
 class Fun extends StatefulWidget {
   @override
@@ -62,9 +64,9 @@ Future<bool> getConnectivity() async {
 
   Future<void> fetchQuote() async {
     final response = await http.get(Uri.parse("https://zenquotes.io/api/random"));
-    final json_data = jsonDecode(response.body);
+    final jsonData = jsonDecode(response.body);
     setState(() {
-      quote = json_data[0]["q"] + " -" + json_data[0]["a"];
+      quote = jsonData[0]["q"] + " -" + jsonData[0]["a"];
     });
   }
 
@@ -129,8 +131,71 @@ class Offline extends StatefulWidget {
 }
 
 class _OfflineState extends State<Offline> {
+  double _gyroX = 0.0; 
+  double _gyroY = 0.0; 
+  double _gyroZ = 0.0;
+  var battery = Battery();
+  late Timer timer;
+  int batteryLevel = 0;
+
+
+  @override 
+  void initState() { 
+    super.initState(); 
+
+    listenBatteryLevel();
+    // Listen to gyroscope data stream 
+    // ignore: deprecated_member_use
+    gyroscopeEvents.listen((GyroscopeEvent event) { 
+      // https://www.geeksforgeeks.org/flutter-using-gyroscope-sensor/
+      setState(() { 
+        _gyroX = event.x; 
+        _gyroY = event.y; 
+        _gyroZ = event.z; 
+      }); 
+    }); 
+    
+  } 
+
+  void listenBatteryLevel() {
+    updateBatteryLevel();
+    timer = Timer.periodic(Duration(seconds: 5), (timer) async => updateBatteryLevel());
+
+  }
+
+  Future updateBatteryLevel() async {
+    final batteryLevel = await battery.batteryLevel;
+    setState(() {
+      this.batteryLevel = batteryLevel;
+    });
+  }
+
+  @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Offline'),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('You seem to be offline :('),
+          Text('while your offline here is some cool info:'),
+            Text('Gyroscope Data:'), // Display a label 
+            Text('X: $_gyroX'), // Display gyroscope X data 
+            Text('Y: $_gyroY'), // Display gyroscope Y data 
+            Text('Z: $_gyroZ'), // Display gyroscope Z data
+          Text('Battery Level: $batteryLevel'),
+        ],
+      )
+    );
   }
 }
