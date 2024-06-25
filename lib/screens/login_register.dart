@@ -47,8 +47,15 @@ class _LoginPageState extends State<LoginPage> {
       "ParkBite Login",
       style: TextStyle(
         fontFamily: 'Mario',
-        fontSize: 24,
-        color: Colors.redAccent,
+        fontSize: 32,
+        color: Colors.white,
+        shadows: [
+          Shadow(
+            blurRadius: 10.0,
+            color: Colors.black,
+            offset: Offset(3.0, 3.0),
+          ),
+        ],
       ),
     );
   }
@@ -59,9 +66,10 @@ class _LoginPageState extends State<LoginPage> {
       ) {
     return TextField(
       controller: controller,
+      style: TextStyle(color: Colors.white),
       decoration: InputDecoration(
         labelText: title,
-        labelStyle: TextStyle(color: Colors.redAccent),
+        labelStyle: TextStyle(color: Colors.yellowAccent),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.redAccent),
         ),
@@ -78,9 +86,10 @@ class _LoginPageState extends State<LoginPage> {
       ) {
     return TextField(
       controller: controller,
+      style: TextStyle(color: Colors.white),
       decoration: InputDecoration(
         labelText: title,
-        labelStyle: TextStyle(color: Colors.redAccent),
+        labelStyle: TextStyle(color: Colors.yellowAccent),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.redAccent),
         ),
@@ -95,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget _errorMessage() {
     return Text(
       errorMessage ?? "",
-      style: TextStyle(color: Colors.redAccent),
+      style: TextStyle(color: Colors.redAccent, fontSize: 14),
     );
   }
 
@@ -104,6 +113,8 @@ class _LoginPageState extends State<LoginPage> {
       onPressed: isLogin ? signInWithEmailAndPassword : createUserWithEmailAndPassword,
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white, backgroundColor: Colors.redAccent,
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        textStyle: TextStyle(fontSize: 18, fontFamily: 'Mario'),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
@@ -120,7 +131,8 @@ class _LoginPageState extends State<LoginPage> {
         });
       },
       style: TextButton.styleFrom(
-        foregroundColor: Colors.blueAccent,
+        foregroundColor: Colors.yellowAccent,
+        textStyle: TextStyle(fontSize: 16, fontFamily: 'Mario'),
       ),
       child: Text(isLogin ? "Create an account" : "Already have an account?"),
     );
@@ -133,27 +145,44 @@ class _LoginPageState extends State<LoginPage> {
         title: _title(),
         backgroundColor: Colors.blueAccent,
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/super_nintendo_world_bg.jpg'),
-            fit: BoxFit.cover,
+      body: Stack(
+        children: [
+          // Background image
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/super_nintendo_world_bg.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
-        ),
-        height: double.infinity,
-        width: double.infinity,
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _emailField("Email", _controllerEmail),
-            _passwordField("Password", _controllerPassword),
-            _errorMessage(),
-            _submitButton(),
-            _switchButton(),
-          ],
-        ),
+          // Overlay to dim the background
+          Container(
+            color: Colors.black.withOpacity(0.4), // Adjust opacity as needed
+            width: double.infinity,
+            height: double.infinity,
+          ),
+          // Content
+          Container(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _emailField("Email", _controllerEmail),
+                SizedBox(height: 16),
+                _passwordField("Password", _controllerPassword),
+                SizedBox(height: 16),
+                _errorMessage(),
+                SizedBox(height: 16),
+                _submitButton(),
+                SizedBox(height: 16),
+                _switchButton(),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
+
 }
