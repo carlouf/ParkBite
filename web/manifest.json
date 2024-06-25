@@ -1,6 +1,6 @@
 {
-    "name": "roberts_rodeo",
-    "short_name": "roberts_rodeo",
+    "name": "ParkBite",
+    "short_name": "ParkBite",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
