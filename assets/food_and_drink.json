@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Margherita Pizza",
+    "location": "Food Court B",
+    "image": "assets/images/margherita.png",
+    "description": "Domino's Pizza Sauce, Tomato, Parsley, Mozzarella Cheese",
+    "availability": "Available",
+    "price": "$9.99"
+  },
+  {
+    "name": "Tuna Delight",
+    "location": "Food Court B",
+    "image": "assets/images/tuna_delight.png",
+    "description": "Hot Spicy Tuna, Mayonnaise, Onion, Red Pepper, Parsley, Mozzarella",
+    "availability": "Available",
+    "price": "$6.99"
+  },
+  {
+    "name": "Beef Delight",
+    "location": "Food Court B",
+    "image": "assets/images/beef_delight.png",
+    "description": "Domino's Pizza Sauce, Beef Rasher, Mozzarella Cheese",
+    "availability": "Available",
+    "price": "$11.99"
+  },
+  {
+    "name": "Cheesy Sausage",
+    "location": "Food Court B",
+    "image": "assets/images/cheesy_sausages.png",
+    "description": "Domino's Pizza Sauce, Beef Sausage Cut, Mozzarella Cheese",
+    "availability": "Available",
+    "price": "$8.99"
+  },
+  {
+    "name": "Meatzza",
+    "location": "Food Court B",
+    "image": "assets/images/meatzza.png",
+    "description": "Domino's Pizza Sauce, Beef Pepperoni, Beef Sausage Cut, Beef Crumble, Beef Rasher, Marinated Chicken, Mozzarella Cheese\n\n",
+    "availability": "Available",
+    "price": "$11.99"
+  },
+  {
+    "name": "Chicken Lovers",
+    "location": "Food Court B",
+    "image": "assets/images/chicken_lovers.png",
+    "description": "Tomato Sauce, Chicken Rasher, parsley, Chicken Pepperoni",
+    "availability": "Available",
+    "price": "$10.99"
+  },
+  {
+    "name": "Ultimate Cheese Melt",
+    "location": "Food Court B",
+    "image": "assets/images/ultimate_cheese_melt.png",
+    "description": "Liquid Cheese Sauce,Keju Mozzarella, Cheddar Cheese Sauce,Keju Ricotta, Mozzarella String, Keju Parmesan, Parsley",
+    "availability": "Available",
+    "price": "$10.99"
+  },
+  {
+    "name": "Chili Chicken",
+    "location": "Food Court B",
+    "image": "assets/images/chili_chicken.png",
+    "description": "Sambal Sauce, Cheese Sauce, Parsley, Chili Chicken, Mozzarella",
+    "availability": "Available",
+    "price": "$10.99"
+  },
+  {
+    "name": "Newyorker Alfredo Beef Truffle",
+    "location": "Food Court B",
+    "image": "assets/images/newyorker_alfredo_beef_truffle.png",
+    "description": "Truffle Alfredo Sauce, Mozzarella Cheese, Beef Burger, Onion, Champignon Mushroom, Parmesan Cheese, Parsley",
+    "availability": "Available",
+    "price": "$12.99"
+  },
+  {
+    "name": "Newyorker Alfredo Chicken Truffle",
+    "location": "Food Court B",
+    "image": "assets/images/newyorker_alfredo_chicken_truffle.png",
+    "description": "Truffle Alfredo Sauce, Mozzarella Cheese, Chili Chicken, Onion, Champignon Mushroom, Parmesan Cheese, Parsley",
+    "availability": "Available",
+    "price": "$11.99"
+  },
+  {
+    "name": "Burger",
+    "location": "Food Court A",
+    "image": "assets/images/burger.png",
+    "description": "A delicious beef burger",
+    "availability": "Available",
+    "price": "$5.99"
+  },
+  {
+    "name": "Chicken Strips (4pca)",
+    "location": "Food Court A",
+    "image": "assets/images/chicken_strips.png",
+    "description": "Crispy Chicken Strips (4 Pcs)",
+    "availability": "Available",
+    "price": "$2.99"
+  },
+  {
+    "name": "American Mac'N Cheese",
+    "location": "Food Court A",
+    "image": "assets/images/mac_n_cheese.png",
+    "description": "American Mac'N Cheese",
+    "availability": "Available",
+    "price": "$2.99"
+  },
+  {
+    "name": "Chicken Spaghetti",
+    "location": "Food Court A",
+    "image": "assets/images/chicken_spaghetti.png",
+    "description": "Chicken Spaghetti",
+    "availability": "Available",
+    "price": "$2.99"
+  },
+  {
+    "name": "Beef Spaghetti",
+    "location": "Food Court A",
+    "image": "assets/images/beef_spaghetti.png",
+    "description": "Beef Spaghetti",
+    "availability": "Available",
+    "price": "$2.99"
+  },
+  {
+    "name": "1 Litre Sprite",
+    "location": "Food Court A",
+    "image": "assets/images/spritel.png",
+    "description": "1 Litre Of Sprite",
+    "availability": "Available",
+    "price": "$1.99"
+  },
+  {
+    "name": "390 ml Sprite",
+    "location": "Food Court A",
+    "image": "assets/images/sprites.png",
+    "description": "390 ml Sprite",
+    "availability": "Available",
+    "price": "$0.99"
+  },
+  {
+    "name": "1 Litre Cocacola",
+    "location": "Food Court A",
+    "image": "assets/images/cocacolal.png",
+    "description": "1 Litre Of Cocacola",
+    "availability": "Available",
+    "price": "$1.99"
+  },
+  {
+    "name": "390 ml Cocacola",
+    "location": "Food Court A",
+    "image": "assets/images/cocacolas.png",
+    "description": "390 ml Cocacola",
+    "availability": "Available",
+    "price": "$0.99"
+  },
+  {
+    "name": "1 Litre Fanta",
+    "location": "Food Court A",
+    "image": "assets/images/fantal.png",
+    "description": "1 Litre Of Fanta",
+    "availability": "Available",
+    "price": "$1.99"
+  },
+  {
+    "name": "390 ml Fantas",
+    "location": "Food Court A",
+    "image": "assets/images/fantas.png",
+    "description": "390 ml Fanta",
+    "availability": "Available",
+    "price": "$0.99"
+  },
+  {
+    "name": "600 ml Mineral Water",
+    "location": "Food Court A",
+    "image": "assets/images/water.png",
+    "description": "600 ml Mineral Water",
+    "availability": "Available",
+    "price": "$0.99"
+  }
+]

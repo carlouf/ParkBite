@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:roberts_rodeo/auth.dart';
+import 'package:ParkBite/auth.dart';
 class UserInfo extends StatelessWidget {
   UserInfo({super.key});
 

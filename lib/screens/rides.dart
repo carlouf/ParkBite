@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'dart:convert';
-import 'package:roberts_rodeo/models/ride.dart';
+import 'package:ParkBite/models/ride.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 
@@ -53,7 +53,7 @@ class Rides extends StatefulWidget {
     }
     
   );
-    // Add your code here
+
   return Future.value(Dialog());
   }    
 
@@ -80,8 +80,6 @@ class _RidesState extends State<Rides> {
       (List<ConnectivityResult> results) async {
         isOnline = await InternetConnectionChecker().hasConnection;
       }
-    //https://www.youtube.com/watch?v=PQ2H3DhBb0s
-    
     );
 
   @override

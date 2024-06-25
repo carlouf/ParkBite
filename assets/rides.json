@@ -1,74 +1,88 @@
 {
   "rides": [
     {
-      "name": "Bucking Bronco",
-      "description": "Hold on tight as you ride the wild bucking bronco through the dusty plains!",
+      "name": "Elmo's Go-Go Skateboard",
+      "description": "Lively ride where guests skate through a vibrant course with loops and ramps, joining Elmo and friends for a fun-filled adventure.",
       "location": "Frontierland",
       "wait_time": "unknown",
-      "image": "assets/images/bull.png"
+      "image": "assets/images/elmo_skateboard.png"
     },
     {
-      "name": "Stampede Express",
-      "description": "Join the stampede aboard the fastest train in the West!",
+      "name": "Cookie Monster Slide",
+      "description": "Playful slide where guests zip down a sweet-themed course, enjoying a tasty adventure with Cookie Monster himself.",
       "location": "Frontierland",
       "wait_time": "unknown",
-      "image": "assets/images/stampede.png"
+      "image": "assets/images/cookie_monster_slide.png"
     },
     {
-      "name": "Tumbleweed Twister",
-      "description": "Spin and swirl through the desert winds on this wild tumbleweed adventure!",
+      "name": "Yoshi's Adventure",
+      "description": "Join Yoshi on a whimsical adventure filled with lush landscapes, playful obstacles, and joyful surprises for an unforgettable experience.",
       "location": "Frontierland",
       "wait_time": "unknown",
-      "image": "assets/images/tumbleweed.png"
+      "image": "assets/images/yoshi_adventure.png"
     },
     {
-      "name": "Cactus Coaster",
-      "description": "Zoom through the desert landscape on this thrilling cactus-themed roller coaster!",
+      "name": "Jurassic Park - The Ride",
+      "description": "Join the expedition to encounter majestic dinosaurs, navigate turbulent waters, and experience heart-pounding excitement in this iconic attraction.",
       "location": "Frontierland",
       "wait_time": "unknown",
-      "image": "assets/images/cactus.png"
+      "image": "assets/images/jurassic_park.png"
     },
     {
-      "name": "Gold Rush Rapids",
-      "description": "Hang on as you navigate the treacherous rapids of the gold rush river!",
+      "name": "Hollywood Dream - The Ride",
+      "description": "Feel the rush as you soar through Hollywood's skyline, twist through thrilling loops, and experience the ultimate blockbuster thrill ride in this high-speed adventure.",
       "location": "Frontierland",
       "wait_time": "unknown",
-      "image": "assets/images/gold.png"
+      "image": "assets/images/hollywood_dream.png"
     },
     {
-      "name": "Wild West Whirl",
-      "description": "Twist and turn through the old western town on this exciting spinning ride!",
+      "name": "Flight Of The Hippogriff",
+      "description": "Join Hagrid on a whimsical journey over the grounds of Hogwarts Castle, experiencing the thrill of flight and the wonder of the wizarding world in this spellbinding adventure.",
       "location": "Old Town",
       "wait_time": "unknown",
-      "image": "assets/images/wild-west.png"
+      "image": "assets/images/flight_of_the_hippogriff.png"
     },
     {
-      "name": "Prairie Plunge",
-      "description": "Take the plunge down the tallest drop in the prairie on this thrilling water ride!",
+      "name": "Freeze Ray Sliders",
+      "description": "Join the brave explorers on a chilling adventure, navigating twists, turns, and frozen surprises in this exhilarating winter-themed experience.",
       "location": "Old Town",
       "wait_time": "unknown",
-      "image": "assets/images/prairie.png"
+      "image": "assets/images/freeze_ray_sliders.png"
     },
     {
-      "name": "Saloon Swing",
-      "description": "Swing high and low on this classic saloon-themed swing ride!",
+      "name": "Despicable Me Minion Mayhem",
+      "description": "Board the Minion transformation vehicle for a chaotic journey through Gru's lair, filled with laughter, unexpected twists, and interactive mayhem that's fun for the whole family.",
       "location": "Old Town",
       "wait_time": "unknown",
-      "image": "assets/images/saloon.png"
+      "image": "assets/images/despicable_me_minion_mayhem.png"
     },
     {
-      "name": "Desert Dune Buggies",
-      "description": "Race through the sandy dunes in your very own desert dune buggy!",
+      "name": "Space Fantasy - The Ride",
+      "description": " Join the space explorers on a thrilling journey filled with dazzling lights, futuristic technology, and heart-pounding excitement in this epic space fantasy experience.",
       "location": "Desert Zone",
       "wait_time": "unknown",
-      "image": "assets/images/dune-buggy.png"
+      "image": "assets/images/space_fantasy_the_ride.png"
     },
     {
-      "name": "Rattlesnake Run",
-      "description": "Slither and slide through the twists and turns of the rattlesnake-infested canyon!",
+      "name": "Mario Kart Koopa Challenge",
+      "description": "Join Mario and friends in a thrilling competition against Bowser, using power-ups and dodging obstacles in a high-speed adventure that's fun for all ages.",
       "location": "Desert Zone",
       "wait_time": "unknown",
-      "image": "assets/images/rattlesnake.png"
+      "image": "assets/images/mario_kart_koopa_challenge.png"
+    },
+    {
+      "name": "Big Bird's Big Nest",
+      "description": "Join in the playground where visitors can explore towering nests, slide down giant slides, and embark on playful adventures with Big Bird and friends.",
+      "location": "Desert Zone",
+      "wait_time": "unknown",
+      "image": "assets/images/big_bird_big_nest.png"
+    },
+    {
+      "name": "Hello Kitty Ribbon Collection",
+      "description": "Join Hello Kitty and her friends on a delightful journey through colorful landscapes, interactive displays, and enchanting activities that celebrate friendship and creativity.",
+      "location": "Desert Zone",
+      "wait_time": "unknown",
+      "image": "assets/images/hello_kitty.png"
     }
   ]
 }

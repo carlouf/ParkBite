@@ -1,4 +1,4 @@
-name: roberts_rodeo
+name: ParkBite
 description: "A new Flutter project."
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -33,6 +33,12 @@ flutter:
 
   uses-material-design: true
   assets:
+  - assets/food_and_drink.json
   - assets/rides.json
   - assets/images/
+  - assets/images/burger.png
 
+  fonts:
+    - family: Mario
+      fonts:
+        - asset: assets/fonts/Mario-Kart-DS.ttf

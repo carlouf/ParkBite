@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:roberts_rodeo/app_body.dart';
-import 'package:roberts_rodeo/auth.dart';
-import 'package:roberts_rodeo/screens/login_register.dart';
+import 'package:ParkBite/app_body.dart';
+import 'package:ParkBite/auth.dart';
+import 'package:ParkBite/screens/login_register.dart';
 
 class WidgetTree extends StatefulWidget {
   const WidgetTree({super.key});

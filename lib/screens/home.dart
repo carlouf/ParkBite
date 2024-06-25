@@ -1,102 +1,104 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-
-
 class Home extends StatefulWidget {
-  const Home({super.key});
+  const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-
   late GoogleMapController mapController;
 
-  final LatLng _center = const LatLng(52.609341, -2.142479);
+  final LatLng _center = const LatLng(34.665442, 135.432338); // Coordinates for Osaka, Japan
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
+
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: isDarkMode ? Colors.black : Colors.white,
       body: SingleChildScrollView(
-      
-      child:  Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children:[
+          children: [
             Container(
               padding: EdgeInsets.only(top: 50.0),
-              child: SizedBox(
-                  
-                width: 300.0,
-                height: 250.0,
-                child: Image(
+              height: 250.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
                   image: AssetImage(
-                    isDarkMode ? 'assets/images/logo.png' : 'assets/images/logo_light.webp',
+                    isDarkMode
+                        ? 'assets/images/super_nintendo_world_dark.jpg'
+                        : 'assets/images/super_nintendo_world_dark.jpg',
                   ),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            Text(
-              "Welcome to Robert Rodeo!",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 30.0,
-                
+            SizedBox(height: 20.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Column(
+                children: [
+                  Text(
+                    "Welcome to Super Nintendo World!",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red, // Nintendo red color
+                    ),
+                  ),
+                  SizedBox(height: 10.0),
+                  Text(
+                    "Where adventure awaits and fun never ends!",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.blue, // Nintendo blue color
+                    ),
+                  ),
+                  SizedBox(height: 20.0),
+                  Text(
+                    "About Us:",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red, // Nintendo red color
+                    ),
+                  ),
+                  SizedBox(height: 10.0),
+                  Text(
+                    "Step into the world of Nintendo where your favorite characters come to life! Super Nintendo World in Osaka, Japan offers thrilling rides, interactive experiences, and delicious treats inspired by your beloved video games. It's a place where imagination meets reality!",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.white54,
+                    ),
+                  ),
+                  SizedBox(height: 20.0),
+                  Text(
+                    "Visit Us:",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red, // Nintendo red color
+                    ),
+                  ),
+                ],
               ),
-
             ),
-            Text(
-              "The best place to find the best rides and have the most fun!",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 20.0,
-                
-              ),
-            ),
-
-            Text(
-              "About Us:",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 30.0,
-                
-              ),
-            ),
-
-            Text(
-              "Welcome to Robert’s Rodeo, where the excitement never ends! Nestled near Wolverhampton, our theme park offers a thrilling blend of exhilarating rides and enchanting themed gardens, providing fun and entertainment for the whole family. Whether you're seeking adrenaline-pumping adventures on our roller coasters or a serene stroll through our meticulously crafted gardens, there's something for everyone at Robert’s Rodeo. Come and experience the magic for yourself!",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15.0,
-                
-              ),
-            ),
-
-            Text(
-              "We are located at:",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 20.0,
-                
-              ),
-            ),
-            
-
             SizedBox(
               height: 200.0,
-              width: 200.0,
               child: GoogleMap(
                 onMapCreated: _onMapCreated,
                 initialCameraPosition: CameraPosition(
@@ -105,18 +107,62 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-
-
-
-
-    
-          ]
-
-
+            Container(
+              color: Colors.red, // Domino's Pizza red color
+              padding: EdgeInsets.symmetric(vertical: 20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                    child: Text(
+                      "Order Domino's Pizza for Delivery!",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                    child: Text(
+                      "Enjoy delicious pizza delivered right to your doorstep while you play!",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20.0),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Add functionality for ordering pizza
+                      },
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.red, backgroundColor: Colors.white, // Domino's Pizza red color
+                        padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 10.0),
+                      ),
+                      child: Text(
+                        "Order Now",
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.red, // Domino's Pizza red color
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
-      )
-      );
-
-    
+      ),
+    );
   }
 }

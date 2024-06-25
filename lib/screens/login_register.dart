@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:roberts_rodeo/auth.dart';
+import 'package:ParkBite/auth.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -42,68 +42,104 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-  Widget _title(){
-    return const Text("Robert's Rodeo Login");
+  Widget _title() {
+    return const Text(
+      "ParkBite Login",
+      style: TextStyle(
+        fontFamily: 'Mario',
+        fontSize: 24,
+        color: Colors.redAccent,
+      ),
+    );
   }
 
   Widget _emailField(
-    String title,
-    TextEditingController controller,
-  ) {
+      String title,
+      TextEditingController controller,
+      ) {
     return TextField(
       controller: controller,
       decoration: InputDecoration(
         labelText: title,
+        labelStyle: TextStyle(color: Colors.redAccent),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.redAccent),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.blueAccent),
+        ),
       ),
     );
-    
   }
 
   Widget _passwordField(
-    String title,
-    TextEditingController controller,
-  ) {
+      String title,
+      TextEditingController controller,
+      ) {
     return TextField(
       controller: controller,
       decoration: InputDecoration(
         labelText: title,
+        labelStyle: TextStyle(color: Colors.redAccent),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.redAccent),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.blueAccent),
+        ),
       ),
       obscureText: true,
     );
   }
 
   Widget _errorMessage() {
-    return Text(errorMessage ?? "");
+    return Text(
+      errorMessage ?? "",
+      style: TextStyle(color: Colors.redAccent),
+    );
   }
 
-  Widget _submitButton(){
+  Widget _submitButton() {
     return ElevatedButton(
       onPressed: isLogin ? signInWithEmailAndPassword : createUserWithEmailAndPassword,
+      style: ElevatedButton.styleFrom(
+        foregroundColor: Colors.white, backgroundColor: Colors.redAccent,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
       child: Text(isLogin ? "Login" : "Register"),
     );
   }
 
-  Widget _switchButton(){
+  Widget _switchButton() {
     return TextButton(
       onPressed: () {
         setState(() {
           isLogin = !isLogin;
         });
       },
+      style: TextButton.styleFrom(
+        foregroundColor: Colors.blueAccent,
+      ),
       child: Text(isLogin ? "Create an account" : "Already have an account?"),
     );
   }
-
-
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: _title(),
+        backgroundColor: Colors.blueAccent,
       ),
       body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/super_nintendo_world_bg.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
         height: double.infinity,
         width: double.infinity,
         padding: const EdgeInsets.all(16),
