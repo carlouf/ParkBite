@@ -5,7 +5,7 @@
     "image": "assets/images/margherita.png",
     "description": "Domino's Pizza Sauce, Tomato, Parsley, Mozzarella Cheese",
     "availability": "Available",
-    "price": "$9.99"
+    "price": "Rp 70.000,00"
   },
   {
     "name": "Tuna Delight",
@@ -13,7 +13,7 @@
     "image": "assets/images/tuna_delight.png",
     "description": "Hot Spicy Tuna, Mayonnaise, Onion, Red Pepper, Parsley, Mozzarella",
     "availability": "Available",
-    "price": "$6.99"
+    "price": "Rp 121.000,00"
   },
   {
     "name": "Beef Delight",
@@ -21,7 +21,7 @@
     "image": "assets/images/beef_delight.png",
     "description": "Domino's Pizza Sauce, Beef Rasher, Mozzarella Cheese",
     "availability": "Available",
-    "price": "$11.99"
+    "price": "Rp 80.000,00"
   },
   {
     "name": "Cheesy Sausage",
@@ -29,7 +29,7 @@
     "image": "assets/images/cheesy_sausages.png",
     "description": "Domino's Pizza Sauce, Beef Sausage Cut, Mozzarella Cheese",
     "availability": "Available",
-    "price": "$8.99"
+    "price": "Rp 85.000,00"
   },
   {
     "name": "Meatzza",
@@ -37,7 +37,7 @@
     "image": "assets/images/meatzza.png",
     "description": "Domino's Pizza Sauce, Beef Pepperoni, Beef Sausage Cut, Beef Crumble, Beef Rasher, Marinated Chicken, Mozzarella Cheese\n\n",
     "availability": "Available",
-    "price": "$11.99"
+    "price": "Rp 90.000,00"
   },
   {
     "name": "Chicken Lovers",
@@ -45,7 +45,7 @@
     "image": "assets/images/chicken_lovers.png",
     "description": "Tomato Sauce, Chicken Rasher, parsley, Chicken Pepperoni",
     "availability": "Available",
-    "price": "$10.99"
+    "price": "Rp 75.000,00"
   },
   {
     "name": "Ultimate Cheese Melt",
@@ -53,7 +53,7 @@
     "image": "assets/images/ultimate_cheese_melt.png",
     "description": "Liquid Cheese Sauce,Keju Mozzarella, Cheddar Cheese Sauce,Keju Ricotta, Mozzarella String, Keju Parmesan, Parsley",
     "availability": "Available",
-    "price": "$10.99"
+    "price": "Rp 85.000,00"
   },
   {
     "name": "Chili Chicken",
@@ -61,7 +61,7 @@
     "image": "assets/images/chili_chicken.png",
     "description": "Sambal Sauce, Cheese Sauce, Parsley, Chili Chicken, Mozzarella",
     "availability": "Available",
-    "price": "$10.99"
+    "price": "Rp 87.000,00"
   },
   {
     "name": "Newyorker Alfredo Beef Truffle",
@@ -69,7 +69,7 @@
     "image": "assets/images/newyorker_alfredo_beef_truffle.png",
     "description": "Truffle Alfredo Sauce, Mozzarella Cheese, Beef Burger, Onion, Champignon Mushroom, Parmesan Cheese, Parsley",
     "availability": "Available",
-    "price": "$12.99"
+    "price": "Rp 72.000,00"
   },
   {
     "name": "Newyorker Alfredo Chicken Truffle",
@@ -77,7 +77,7 @@
     "image": "assets/images/newyorker_alfredo_chicken_truffle.png",
     "description": "Truffle Alfredo Sauce, Mozzarella Cheese, Chili Chicken, Onion, Champignon Mushroom, Parmesan Cheese, Parsley",
     "availability": "Available",
-    "price": "$11.99"
+    "price": "Rp 80.000,00"
   },
   {
     "name": "Burger",
@@ -85,7 +85,7 @@
     "image": "assets/images/burger.png",
     "description": "A delicious beef burger",
     "availability": "Available",
-    "price": "$5.99"
+    "price": "Rp 110.000,00"
   },
   {
     "name": "Chicken Strips (4pca)",
@@ -93,7 +93,7 @@
     "image": "assets/images/chicken_strips.png",
     "description": "Crispy Chicken Strips (4 Pcs)",
     "availability": "Available",
-    "price": "$2.99"
+    "price": "Rp 115.000,00"
   },
   {
     "name": "American Mac'N Cheese",
@@ -101,7 +101,7 @@
     "image": "assets/images/mac_n_cheese.png",
     "description": "American Mac'N Cheese",
     "availability": "Available",
-    "price": "$2.99"
+    "price": "Rp 112.000,00"
   },
   {
     "name": "Chicken Spaghetti",
@@ -109,7 +109,7 @@
     "image": "assets/images/chicken_spaghetti.png",
     "description": "Chicken Spaghetti",
     "availability": "Available",
-    "price": "$2.99"
+    "price": "Rp 87.000,00"
   },
   {
     "name": "Beef Spaghetti",
@@ -117,7 +117,7 @@
     "image": "assets/images/beef_spaghetti.png",
     "description": "Beef Spaghetti",
     "availability": "Available",
-    "price": "$2.99"
+    "price": "Rp 92.000,00"
   },
   {
     "name": "1 Litre Sprite",
@@ -125,7 +125,7 @@
     "image": "assets/images/spritel.png",
     "description": "1 Litre Of Sprite",
     "availability": "Available",
-    "price": "$1.99"
+    "price": "Rp 120.000,00"
   },
   {
     "name": "390 ml Sprite",
@@ -133,7 +133,7 @@
     "image": "assets/images/sprites.png",
     "description": "390 ml Sprite",
     "availability": "Available",
-    "price": "$0.99"
+    "price": "Rp 90.000,00"
   },
   {
     "name": "1 Litre Cocacola",
@@ -141,7 +141,7 @@
     "image": "assets/images/cocacolal.png",
     "description": "1 Litre Of Cocacola",
     "availability": "Available",
-    "price": "$1.99"
+    "price": "Rp, 150.000,00"
   },
   {
     "name": "390 ml Cocacola",
@@ -149,7 +149,7 @@
     "image": "assets/images/cocacolas.png",
     "description": "390 ml Cocacola",
     "availability": "Available",
-    "price": "$0.99"
+    "price": "Rp 100.000,00"
   },
   {
     "name": "1 Litre Fanta",
@@ -157,7 +157,7 @@
     "image": "assets/images/fantal.png",
     "description": "1 Litre Of Fanta",
     "availability": "Available",
-    "price": "$1.99"
+    "price": "Rp 20.000,00"
   },
   {
     "name": "390 ml Fantas",
@@ -165,7 +165,7 @@
     "image": "assets/images/fantas.png",
     "description": "390 ml Fanta",
     "availability": "Available",
-    "price": "$0.99"
+    "price": "Rp 20.000,00"
   },
   {
     "name": "600 ml Mineral Water",
@@ -173,6 +173,6 @@
     "image": "assets/images/water.png",
     "description": "600 ml Mineral Water",
     "availability": "Available",
-    "price": "$0.99"
+    "price": "Rp 10.000,00"
   }
 ]
